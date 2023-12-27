@@ -8,6 +8,9 @@ module.exports = {
       ],
       theme: {
         extend: {
+          with:{
+            full: "100%"
+          },
           borderRadius: {
             small: "4px",
             mid: "10px",
