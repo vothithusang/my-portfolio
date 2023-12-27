@@ -8,7 +8,7 @@ const Routes = () => {
   const routes = useRoutes([
     {
       path: "/login",
-      element: <Login></Login>,
+      element: <Login />,
     },
     {
       element: <MainLayout />,

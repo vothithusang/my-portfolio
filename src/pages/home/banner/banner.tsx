@@ -1,6 +1,5 @@
-import backGround from "../../../assets/Background.png";
-import iconHand from "../../../assets/Icon_hand.png";
-import Avartar from "../../../assets/Avartar.png";
+import Avartar from "assets/images/Avartar.png";
+import IconHand from "assets/images/Icon_hand.png";
 import "./index.scss";
 
 const Banner = () => {
@@ -13,7 +12,7 @@ const Banner = () => {
             <p className="font-semibold text-[30px] font-[fraunces] flex justify-center items-center">
               Hello, world!{" "}
               <span>
-                <img className="w-[100%]" src={iconHand} alt="icon-hand"></img>
+                <img className="w-[100%]" src={IconHand} alt="icon-hand"></img>
               </span>
             </p>
             <p className="font-semibold text-[50px] font-[fraunces] ">
