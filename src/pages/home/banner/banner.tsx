@@ -6,8 +6,7 @@ const Banner = () => {
   return (
     <>
       <div className="flex text-center w-[100%] justify-center">
-        <div className="w-[100%] h-[500px] relative flex container-banner items-center">
-          {/* <img className="w-[100%]" src={backGround} alt="back-ground"></img> */}
+        <div className="w-[100%] h-[500px] relative flex p-[10rem 0] container-banner items-center bg-[url(/src/assets/Background.png)] bg-[100%] h-[100%]">
           <div className="flex-[0.5]">
             <p className="font-semibold text-[30px] font-[fraunces] flex justify-center items-center">
               Hello, world!{" "}
@@ -19,8 +18,8 @@ const Banner = () => {
               I'm Thu Sang! a developer
             </p>
           </div>
-          <div className="flex-[0.5]">
-            <img className="w-[100%]" src={Avartar} alt="avatar"></img>
+          <div className="flex-[0.5] ">
+            <img className="w-[90%]" src={Avartar} alt="avatar"></img>
           </div>
         </div>
       </div>
