@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Outlet } from "react-router-dom";
 import { setUser } from "../../redux/slices/userSlice";
 import "./index.scss";
+import logo from "../../assets/Logo.png";
 
 const Header = () => {
   const dispath = useDispatch();
@@ -19,12 +20,19 @@ const Header = () => {
   console.log("user", _user);
   return (
     <>
-      <div className="rounded-[8px] border border-solid  card">
-        <header className="text-blackColor p-[10px] text-center">
-          <h1>Your Website Name</h1>
+      <div>
+        <header className="text-blackColor p-[10px] text-center flex justify-between">
+          <div>
+            <img src={logo} alt="logo"></img>
+          </div>
+          <div className="flex justify-between w-[20%] pr-10 items-center">
+            <h1>Home</h1>
+            <h1>Work</h1>
+            <h1>Me</h1>
+          </div>
         </header>
       </div>
-      <Outlet></Outlet>
+      {/* <Outlet></Outlet> */}
     </>
   );
 };

@@ -1,7 +1,8 @@
 import { Navigate, useRoutes } from "react-router-dom";
 import { Home } from "../pages/home";
-import { Header } from "../layouts/header";
 import { Login } from "../pages/login";
+import { NotFound } from "../pages/notFound";
+import { MainLayout } from "../layouts/mainLayout";
 
 const Routes = () => {
   const routes = useRoutes([
@@ -10,7 +11,7 @@ const Routes = () => {
       element: <Login></Login>,
     },
     {
-      element: <Header />,
+      element: <MainLayout />,
       children: [
         {
           path: "/",
@@ -19,6 +20,10 @@ const Routes = () => {
         {
           path: "/home",
           element: <Home />,
+        },
+        {
+          path: "*",
+          element: <NotFound />,
         },
       ],
     },
