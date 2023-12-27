@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Outlet } from "react-router-dom";
 import { setUser } from "../../redux/slices/userSlice";
 import "./index.scss";
 import logo from "../../assets/Logo.png";
