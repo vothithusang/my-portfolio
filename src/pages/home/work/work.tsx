@@ -1,4 +1,4 @@
-import Nail from "../../../assets/nail.png";
+// import Nail from "../../../assets/Nail.png";
 import PhotoLeft1 from "../../../assets/Photo_left_1.png";
 import { CardCareer } from "./cardCareer";
 const Work = () => {
@@ -8,7 +8,7 @@ const Work = () => {
         <div className="flex items-center justify-around">
           <div className="w-[40%] bg-[#E7E7E7] h-[1px]"></div>
           <div className="flex uppercase font-[mulish] font-bold justify-center items-center">
-            <img src={Nail} alt="nail"></img>
+            {/* <img src={Nail} alt="nail"></img> */}
             <p>My Craft</p>
           </div>
           <div className="w-[40%] bg-[#E7E7E7] h-[1px]"></div>
