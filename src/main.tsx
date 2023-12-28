@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
+import './assets/scss/global.scss'
 import { BrowserRouter } from "react-router-dom";
 import { store } from "./redux/store.ts";
 import { Provider } from "react-redux";
