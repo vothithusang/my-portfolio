@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setUser } from "../../redux/slices/userSlice";
-import logo from "/images/logo.png";
+import logo from "@/images/logo.png";
 import { RootState } from "../../redux/store";
 
 const Header = () => {
