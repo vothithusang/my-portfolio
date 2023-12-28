@@ -1,5 +1,4 @@
-// import Nail from "../../../assets/Nail.png";
-import PhotoLeft1 from "../../../assets/Photo_left_1.png";
+import PhotoLeft1 from "/images/thumbnail.png";
 import { CardCareer } from "./cardCareer";
 const Work = () => {
   return (

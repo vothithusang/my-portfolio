@@ -1,6 +1,6 @@
-import iconHand from "../../../assets/Icon_hand.png";
-import ImgBanner from "../../../assets/ImageBanner.jpg";
-import CircleBanner from "../../../assets/Circle-Banner.png";
+import iconHand from "/images/ic-hand.png";
+import ImgBanner from "/images/profile.jpg";
+import CircleBanner from "/images/circle-banner.png";
 import "./index.scss";
 
 const Banner = () => {
@@ -28,7 +28,7 @@ const Banner = () => {
             ></img>
           </div>
         </div>
-      </div>
+      </div >
     </>
   );
 };
