@@ -13,7 +13,7 @@ const Header = () => {
       id: 1,
       name: "abc",
     };
-    dispath(setUser(user));
+    dispath(setUser(use));
   }, []);
 
   console.log("user", _user);
