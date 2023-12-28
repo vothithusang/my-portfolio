@@ -1,8 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setUser } from "../../redux/slices/userSlice";
-import "./index.scss";
-import logo from "/images/Logo.png";
+import logo from "/images/logo.png";
 
 const Header = () => {
   const dispath = useDispatch();
