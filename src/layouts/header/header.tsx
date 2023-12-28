@@ -1,12 +1,13 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setUser } from "../../redux/slices/userSlice";
-import logo from "../../assets/Logo.png";
+import logo from "/images/logo.png";
+import { RootState } from "../../redux/store";
 
 const Header = () => {
   const dispath = useDispatch();
 
-  const _user = useSelector((state: any) => state?.user);
+  const _user = useSelector((state: RootState) => state?.user);
   useEffect(() => {
     const user = {
       id: 1,
@@ -23,11 +24,11 @@ const Header = () => {
           <div>
             <img src={logo} alt="logo"></img>
           </div>
-          <div className="flex justify-between w-[20%] pr-10 items-center">
+          {/* <div className="flex justify-between w-[20%] pr-10 items-center">
             <h1>Home</h1>
             <h1>Work</h1>
             <h1>Me</h1>
-          </div>
+          </div> */}
         </header>
       </div>
       {/* <Outlet></Outlet> */}

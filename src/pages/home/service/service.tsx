@@ -1,5 +1,5 @@
 import { Col, Row } from "antd";
-import BgMe from "../../../assets/bg-me.png";
+import BgMe from "/images/bg-me.png";
 
 const Service = () => {
   return (

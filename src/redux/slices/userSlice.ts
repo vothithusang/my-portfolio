@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { User } from "../../models/user.interface";
 
 const initialState = {
   userInfo: {
@@ -8,7 +9,7 @@ const initialState = {
     accessToken: "",
   },
   accessToken: "",
-};
+} as User;
 
 export const userSlice = createSlice({
   name: "user",
