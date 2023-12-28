@@ -1,6 +1,5 @@
 import iconHand from "../../../assets/Icon_hand.png";
 import ImgBanner from "../../../assets/ImageBanner.jpg";
-// import Avartar from "../../../assets/Avartar.png";
 import CircleBanner from "../../../assets/Circle-Banner.png";
 import "./index.scss";
 
@@ -8,7 +7,7 @@ const Banner = () => {
   return (
     <>
       <div className="flex text-center w-full p-[3rem]">
-        <div className="w-full relative p-[1rem] flex  container-banner items-center bg-[url(/src/assets/Background.png)] bg-[5%] h-[100%]">
+        <div className="w-full relative p-[1rem] flex  container-banner items-center bg-[url(/src/assets/Background.png)]  bg-cover bg-center h-[100%]">
           <div className="flex-[0.5]">
             <p className="font-semibold text-[30px] font-[fraunces] flex justify-center items-center">
               Hello, world!
