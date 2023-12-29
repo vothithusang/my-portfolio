@@ -31,6 +31,8 @@ module.exports = {
         bgColumn: "#57b4ff14",
         errorColor: "#bc1430",
         borderCircle: "#E1E1E1",
+        mainTextColor: "#2A2C32",
+        purpleColor: "#7390F9",
       },
     },
   },
