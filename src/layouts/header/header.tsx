@@ -1,10 +1,28 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { NavLink } from "react-router-dom";
+import Logo from '../../assets/images/svg/logo.svg';
 import { setUser } from "../../redux/slices/userSlice";
 import { RootState } from "../../redux/store";
-import Logo from '../../assets/images/svg/logo.svg';
-import { NavLink } from "react-router-dom";
 
+export const menu = [
+  {
+    id: 1,
+    label: "home",
+  },
+  {
+    id: 2,
+    label: "work",
+  },
+  {
+    id: 3,
+    label: "me",
+  },
+  {
+    id: 4,
+    label: "fun",
+  },
+];
 
 const Header = () => {
   const dispath = useDispatch();
@@ -37,37 +55,24 @@ const Header = () => {
     // </>
 
     //UPDATE HEADER
-    <header>
-      <div className="container header-wrapper w-full">
-        <div>
-          <div className="m-auto w-20">
-            <img className="sidebar-logo" src={Logo} alt='logo' />
-          </div>
-          <div className="text-mainColor text-[18px]" >
-            <ul className="flex items-center gap-5 ">
-              <li>
-                <NavLink to='#'>
-                  <span>Comic List</span>
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to='#'>
-                  <span>Category</span>
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to='#'>
-                  <span>Popular</span>
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to='#'>
-                  <span>Contact</span>
-                </NavLink>
-              </li>
-            </ul>
-          </div>
+    <header className="h-[150px]">
+      <div className="container flex-between">
+        <div className="flex-center ">
+          <img className="sidebar-logo" src={Logo} alt='logo' />
+          <span className="text-[37px] text-[#242F65] font-extrabold font-mulish mr-[5px]">UIUXer</span>
         </div>
+        <ul className="flex items-center gap-5 font-poppins h-full capitalize">
+          {menu?.map((item) => {
+            return (
+              <li className="h-full">
+                <NavLink to='#' className="text-[20px] font-semibold no-underline text-[#2F2F2F] flex-center">
+                  {item?.label}
+                </NavLink>
+              </li>
+            )
+          })}
+
+        </ul>
       </div>
     </header>
   );
