@@ -30,6 +30,7 @@ module.exports = {
         blackColor: "#000000de",
         bgColumn: "#57b4ff14",
         errorColor: "#bc1430",
+        borderCircle: "#E1E1E1",
       },
     },
   },

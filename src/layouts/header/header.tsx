@@ -5,7 +5,13 @@ import Logo from '../../assets/images/svg/logo.svg';
 import { setUser } from "../../redux/slices/userSlice";
 import { RootState } from "../../redux/store";
 
-export const menu = [
+export interface IMenu {
+  id: number;
+  link?: string;
+  label: string
+}
+
+export const menu: IMenu[] = [
   {
     id: 1,
     label: "home",
@@ -65,13 +71,12 @@ const Header = () => {
           {menu?.map((item) => {
             return (
               <li className="h-full">
-                <NavLink to='#' className="text-[20px] font-semibold no-underline text-[#2F2F2F] flex-center">
+                <NavLink to='#' className="text-[20px] no-underline text-[#2F2F2F] flex-center">
                   {item?.label}
                 </NavLink>
               </li>
             )
           })}
-
         </ul>
       </div>
     </header>

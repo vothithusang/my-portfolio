@@ -1,10 +1,8 @@
-import { createFromIconfontCN } from "@ant-design/icons";
 import { Col, Row } from "antd";
-import { GoogleSvgComponent } from "../../../assets/svg";
+import { FaceBookSvgComponent } from "../../../assets/svg";
+import { TwiterSvgComponent } from "../../../assets/svg";
+import { PintrestSvgComponent } from "../../../assets/svg";
 import BgMe from "/images/bg-me.png";
-const IconFont = createFromIconfontCN({
-  scriptUrl: "//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js",
-});
 
 const Service = () => {
   return (
@@ -19,21 +17,19 @@ const Service = () => {
           </p>
         </Col>
         <Col span={12}>
-          <div className="w-56 h-56 border-solid border-[1px] border-[#E1E1E1] rounded-full relative flex items-center justify-center right-0">
-            <span>
-              <IconFont
-                type="icon-facebook"
-                className="z-10 absolute left-[30px] top-[70px]"
-              />
-              <IconFont
-                type="icon-twitter"
-                className="z-10 absolute left-[25px]"
-              />
-              <GoogleSvgComponent className="z-10 absolute left-[30px] top-[70px]" />
+          <div className="w-[653px] h-[653px] border-solid border-[1px] border-[#E1E1E1] rounded-full relative flex items-center justify-center right-0">
+            <span className="absolute bg-white z-[1] top-[204px] left-[43px] p-5 rounded-[50%] border-[1px] border-borderCircle">
+              <TwiterSvgComponent />
             </span>
-            <div className="w-48 h-48 border-solid border-[1px] border[#E1E1E1] rounded-full absolute right-0 flex items-center">
+            <span className="absolute top-[295px]  bg-white z-[1]  left-[32px] p-5 rounded-[50%] border-[1px] border-borderCircle">
+              <FaceBookSvgComponent />
+            </span>
+            <span className="absolute top-[386px]  bg-white z-[1]  left-[43px] p-5 rounded-[50%] border-[1px] border-borderCircle">
+              <PintrestSvgComponent />
+            </span>
+            <div className="w-[593px] h-[593px] border-solid border-[1px] border[#E1E1E1] rounded-full absolute right-0 flex items-center">
               <img
-                className="w-36 h-36 object-cover rounded-full absolute right-[-2px]"
+                className="w-[517px] h-[517px] object-cover rounded-full absolute right-[-2px]"
                 src={BgMe}
                 alt="img-me"
               />
