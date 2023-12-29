@@ -1,5 +1,10 @@
+import { createFromIconfontCN } from "@ant-design/icons";
 import { Col, Row } from "antd";
+import { GoogleSvgComponent } from "../../../assets/svg";
 import BgMe from "/images/bg-me.png";
+const IconFont = createFromIconfontCN({
+  scriptUrl: "//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js",
+});
 
 const Service = () => {
   return (
@@ -15,6 +20,17 @@ const Service = () => {
         </Col>
         <Col span={12}>
           <div className="w-56 h-56 border-solid border-[1px] border-[#E1E1E1] rounded-full relative flex items-center justify-center right-0">
+            <span>
+              <IconFont
+                type="icon-facebook"
+                className="z-10 absolute left-[30px] top-[70px]"
+              />
+              <IconFont
+                type="icon-twitter"
+                className="z-10 absolute left-[25px]"
+              />
+              <GoogleSvgComponent className="z-10 absolute left-[30px] top-[70px]" />
+            </span>
             <div className="w-48 h-48 border-solid border-[1px] border[#E1E1E1] rounded-full absolute right-0 flex items-center">
               <img
                 className="w-36 h-36 object-cover rounded-full absolute right-[-2px]"

@@ -1,10 +1,12 @@
-import { Progress } from "antd";
 import styled from "styled-components";
 
-const StyledProgress = styled(Progress)`
-  .ant-progress-inner {
-    width: 200px !important;
-    height: 200px !important;
+const StyledProgress = styled.div`
+  .z-10 {
+    position: relative;
+    z-index: 10;
+    /* Điều chỉnh vị trí của icon theo ý muốn của bạn */
+    top: -10px;
+    right: 5px;
   }
 `;
 
