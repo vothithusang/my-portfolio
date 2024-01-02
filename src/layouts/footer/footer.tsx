@@ -4,21 +4,16 @@ import "./index.scss";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center  bg-[url(/images/bg-footer.png)] bg-cover bg-center h-[400px]  relative gap-5 text-white">
-      <div>
-        <CircleText />
-        {/* <div className="circular-text-container">
-          <span className="circular-text">
-            Thank for scrollingiget in touch!
-          </span>
-        </div> */}
-      </div>
+    <footer className="bg-[url(/images/bg-footer.png)] bg-cover bg-center gap-6 flex flex-col items-center justify-center text-white">
       <div className="">
+        <CircleText />
+      </div>
+      <div className=" ">
         <span>akdaksdjalskdjlasdjlkasdjlkasdjlaksdjlkasdjklasdklsa</span>
       </div>
       <div className="border border-[#D092BA] w-full h-[1px]"></div>
-      <div className="flex w-[100%]">
-        <div className="text-white grid grid-cols-2 w-[50%] pl-[25rem]">
+      <div className="flex w-[100%] h-28 pb-4">
+        <div className="grid grid-cols-2 w-[40%] pl-[18rem]">
           <ul>
             <li>Home</li>
           </ul>
@@ -38,11 +33,11 @@ const Footer = () => {
             <li>Twitter</li>
           </ul>
         </div>
-        <div className="w-[50%]">
-          <Button>ABc</Button>
+        <div className="w-[50%] ">
+          <Button className="w-[500px] h-[60px] text-white bg-">ABc</Button>
         </div>
       </div>
-      <div className="bottom-0  absolute pb-4">
+      <div className="bottom-0 pb-4 ">
         <span>
           Copyright © Designerz | Designed by VictorFlow Templates - Powered by
           Webflow
