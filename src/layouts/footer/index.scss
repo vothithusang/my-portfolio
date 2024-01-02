@@ -1,0 +1,15 @@
+.circular-text-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid #000; /* Thay đổi màu và độ dày đường viền nếu cần */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular-text {
+  white-space: nowrap;
+  transform: rotate(-90deg); /* Đảo ngược góc quay để chữ nằm theo viền */
+}
