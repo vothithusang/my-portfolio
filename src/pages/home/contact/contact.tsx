@@ -3,6 +3,7 @@ import BgContact from "/images/bg-contact.jpg";
 import VectorTop from "/images/vector-top.png";
 const Contact = () => {
   return (
+    //CHANGE pt-10 pb-10 to py-10
     <div className="container pt-10 pb-10 flex-center">
       <div className="h-[300px] w-[800px] relative flex-center">
         <img src={BgContact} alt="bg-contact"></img>
