@@ -2,14 +2,16 @@ import { Service } from "./service";
 import { AboutUs } from "./aboutUs";
 import Banner from "./banner/banner";
 import { Work } from "./work";
+import { Contact } from "./contact";
 
 const Home = () => {
   return (
     <>
-      <Banner></Banner>
-      <AboutUs></AboutUs>
-      <Work></Work>
-      <Service></Service>
+      <Banner />
+      <AboutUs />
+      <Work />
+      <Service />
+      <Contact />
     </>
   );
 };
