@@ -4,11 +4,11 @@ import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
   return (
-    <div className="pl-[10%] pr-[10%]">
+    <main className="w-full">
       <Header />
       <Outlet />
       <Footer />
-    </div>
+    </main>
   );
 };
 

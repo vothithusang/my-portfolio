@@ -1,14 +1,12 @@
-import { createFromIconfontCN } from "@ant-design/icons";
 import { Col, Row } from "antd";
-import { GoogleSvgComponent } from "../../../assets/svg";
+import { FaceBookSvgComponent } from "../../../assets/svg";
+import { TwiterSvgComponent } from "../../../assets/svg";
+import { PintrestSvgComponent } from "../../../assets/svg";
 import BgMe from "/images/bg-me.png";
-const IconFont = createFromIconfontCN({
-  scriptUrl: "//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js",
-});
 
 const Service = () => {
   return (
-    <div className="pt-10">
+    <div className="container pt-10">
       <Row>
         <Col span={12} className="flex justify-end items-center">
           <p className="w-[385px] font-[fraunces] font-semibold text-[20px] pl-[5rem]">
@@ -19,17 +17,15 @@ const Service = () => {
           </p>
         </Col>
         <Col span={12}>
-          <div className="w-56 h-56 border-solid border-[1px] border-[#E1E1E1] rounded-full relative flex items-center justify-center right-0">
-            <span>
-              <IconFont
-                type="icon-facebook"
-                className="z-10 absolute left-[30px] top-[70px]"
-              />
-              <IconFont
-                type="icon-twitter"
-                className="z-10 absolute left-[25px]"
-              />
-              <GoogleSvgComponent className="z-10 absolute left-[30px] top-[70px]" />
+          <div className="w-56 h-56  border-solid border-[1px] border-[#E1E1E1] rounded-full relative flex items-center justify-center right-0">
+            <span className="absolute bg-white z-[1] p-2 top-[50px] left-[24px] rounded-[50%] border-[1px] border-borderCircle">
+              <TwiterSvgComponent />
+            </span>
+            <span className="absolute top-[100px]  bg-white z-[1]  left-[15px] p-2 rounded-[50%] border-[1px] border-borderCircle">
+              <FaceBookSvgComponent />
+            </span>
+            <span className="absolute top-[150px]  bg-white z-[1]  left-[30px] p-2 rounded-[50%] border-[1px] border-borderCircle">
+              <PintrestSvgComponent />
             </span>
             <div className="w-48 h-48 border-solid border-[1px] border[#E1E1E1] rounded-full absolute right-0 flex items-center">
               <img

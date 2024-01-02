@@ -1,10 +1,7 @@
 // eslint-disable-next-line no-undef
 module.exports = {
   important: true,
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       width: {
@@ -15,9 +12,10 @@ module.exports = {
         mid: "10px",
       },
       fontFamily: {
-        inter: ["Inter"],
-        noto: ["NotoSansKR"],
-        open: ["OpenSans"],
+        // inter: ["Inter"],
+        // noto: ["NotoSansKR"],
+        // open: ["OpenSans"],
+        poppins: ["Poppins"],
       },
       boxShadow: {
         common: "0px 0px 32px rgba(136, 152, 170, 0.15)",
@@ -32,6 +30,9 @@ module.exports = {
         blackColor: "#000000de",
         bgColumn: "#57b4ff14",
         errorColor: "#bc1430",
+        borderCircle: "#E1E1E1",
+        mainTextColor: "#2A2C32",
+        purpleColor: "#7390F9",
       },
     },
   },

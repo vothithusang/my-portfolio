@@ -1,11 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import "./variables.scss";
 @import "./mixin.scss";
+@import "./style-tailwind.scss";
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Mulish", sans-serif;
 }
 
 html {
@@ -83,16 +88,15 @@ h6 {
 
 a {
   font-size: 15px;
-  font-weight: 700;
   line-height: 26px;
-  text-decoration: underline;
+  text-decoration: none;
   scroll-behavior: smooth;
 }
 
 p {
   font-size: 18px;
   font-weight: 300;
-  line-height: 1.8;
+  // line-height: 1.8;
   letter-spacing: 1.5px;
 }
 small {
@@ -105,18 +109,8 @@ small {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  padding: 0 16px;
-
-  @include tablet {
-    max-width: 960px;
-    padding: 0px 24px;
-  }
-
-  @include desktop {
-    max-width: 1440px;
-    padding: 0px 20px;
-  }
+  padding: 0px 5rem;
+  max-width: 100%;
 }
 
 //set padding between section
