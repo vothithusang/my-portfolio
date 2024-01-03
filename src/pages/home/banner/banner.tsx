@@ -21,9 +21,10 @@ const Banner = () => {
             yesimbobdylan@gmail.com
           </span>
         </div>
-        <div className="relative w-[80%]">
-          <img className="w-full " src={ImgBanner} alt="avatar"></img>
-
+        <div className="relative ">
+          <div className="w-[80%]">
+            <img className="w-full " src={ImgBanner} alt="avatar"></img>
+          </div>
           <span className="w-[200px] h-[200px] absolute bottom-[50px] right-0">
             <img src={CircleBanner} alt="avatar"></img>
           </span>
