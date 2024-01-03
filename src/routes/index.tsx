@@ -4,6 +4,7 @@ import { Login } from "../pages/login";
 import { NotFound } from "../pages/notFound";
 import { MainLayout } from "../layouts/mainLayout";
 import React from "react";
+import About from "../pages/about/about";
 
 const Routes = () => {
   const routes = useRoutes([
@@ -21,6 +22,10 @@ const Routes = () => {
         {
           path: "/home",
           element: <Home />,
+        },
+        {
+          path: "/about",
+          element: <About />,
         },
         {
           path: "*",
