@@ -78,7 +78,7 @@ const About = () => {
         render={({ field: { onChange, onBlur, value } }) => (
           <Input
             placeholder="Email"
-            type="number"
+            type="string"
             onBlur={onBlur}
             onChange={onChange}
             value={value}
