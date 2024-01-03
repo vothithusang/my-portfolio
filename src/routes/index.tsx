@@ -3,6 +3,7 @@ import { Home } from "../pages/home";
 import { Login } from "../pages/login";
 import { NotFound } from "../pages/notFound";
 import { MainLayout } from "../layouts/mainLayout";
+import React from "react";
 
 const Routes = () => {
   const routes = useRoutes([
